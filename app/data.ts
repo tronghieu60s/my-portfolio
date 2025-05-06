@@ -49,28 +49,20 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
     id: 'work1',
-  },
-  {
-    company: 'Freelance',
-    title: 'Design Engineer',
+    link: 'https://www.cisbox.com/',
+    title: 'Software Engineer',
+    company: 'Cisbox Software Ltd',
     start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
+    end: 'Present',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
+    id: 'work2',
+    link: '/',
+    title: 'Full Stack Software Engineer',
+    company: 'Freelance (Remote)',
+    start: '2021',
     end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
   },
 ]
 
@@ -99,21 +91,25 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
+    label: 'My CV',
+    link: '/cv',
   },
   {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'Github',
+    link: 'https://github.com/tronghieu60s',
+  },
+  {
+    label: 'Telegram',
+    link: 'https://t.me/tronghieu_me',
+  },
+  {
+    label: 'Facebook',
+    link: 'https://fb.me/tronghieu60s',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.linkedin.com/in/tronghieu60s',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'tronghieu60s@gmail.com'
