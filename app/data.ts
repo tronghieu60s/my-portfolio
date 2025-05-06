@@ -100,7 +100,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'Telegram',
-    link: 'https://t.me/tronghieu_me',
+    link: 'https://t.me/tronghieu60s',
   },
   {
     label: 'Facebook',
