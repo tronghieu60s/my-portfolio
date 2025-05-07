@@ -251,7 +251,7 @@ export default function Personal() {
           </a>
           .
         </p>
-        <div className="flex flex-wrap items-center justify-start space-x-3 space-y-3">
+        <div className="flex flex-wrap items-center justify-start gap-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink key={link.label} link={link.link}>
               {link.label}
