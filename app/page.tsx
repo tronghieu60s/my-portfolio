@@ -9,7 +9,8 @@ import {
 } from '@/components/ui/morphing-dialog'
 import { XIcon } from 'lucide-react'
 import { motion } from 'motion/react'
-import { EMAIL, SOCIAL_LINKS } from './data'
+import { EMAIL, PROJECTS, SOCIAL_LINKS, WORK_EXPERIENCE } from './data'
+import { Spotlight } from '@/components/ui/spotlight'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -136,11 +137,32 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      {/* <motion.section
+      <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">Connect</h3>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+          Feel free to contact me at{' '}
+          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
+            {EMAIL}
+          </a>
+          .
+        </p>
+        <div className="flex flex-wrap items-center justify-start gap-3">
+          {SOCIAL_LINKS.map((link) => (
+            <MagneticSocialLink key={link.label} link={link.link}>
+              {link.label}
+            </MagneticSocialLink>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Pet Projects</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -163,9 +185,9 @@ export default function Personal() {
             </div>
           ))}
         </div>
-      </motion.section> */}
+      </motion.section>
 
-      {/* <motion.section
+      <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -201,7 +223,7 @@ export default function Personal() {
             </a>
           ))}
         </div>
-      </motion.section> */}
+      </motion.section>
 
       {/* <motion.section
         variants={VARIANTS_SECTION}
@@ -238,27 +260,6 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section> */}
-
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Connect</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
-          .
-        </p>
-        <div className="flex flex-wrap items-center justify-start gap-3">
-          {SOCIAL_LINKS.map((link) => (
-            <MagneticSocialLink key={link.label} link={link.link}>
-              {link.label}
-            </MagneticSocialLink>
-          ))}
-        </div>
-      </motion.section>
     </motion.main>
   )
 }
